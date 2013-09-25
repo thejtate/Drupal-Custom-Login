@@ -7,6 +7,7 @@ function THEME_form_alter(&$form, &$form_state, $form_id) {
     $form['pass']['#attributes']['placeholder'] = t( 'Password' );
     $form['name']['#title_display'] = "invisible";
     $form['pass']['#title_display'] = "invisible";
+    $form['name']['#attributes'] = array('class' => array('easy-new-class'));
 }
 
 /*Remove login form descriptions */
